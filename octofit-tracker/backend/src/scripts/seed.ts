@@ -1,5 +1,5 @@
 // Seed the octofit_db database with test data
-import { connectDb } from '../db.js';
+import { connectDb } from '../database.js';
 import UserModel from '../models/user.js';
 import TeamModel from '../models/team.js';
 import ActivityModel from '../models/activity.js';

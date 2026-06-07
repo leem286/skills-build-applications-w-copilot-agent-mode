@@ -1,6 +1,6 @@
 import express from 'express';
 import apiRouter from './routes.js';
-import { connectDb } from './db.js';
+import { connectDb } from './database.js';
 
 const PORT = 8000;
 const CODESPACE_NAME = process.env.CODESPACE_NAME;
