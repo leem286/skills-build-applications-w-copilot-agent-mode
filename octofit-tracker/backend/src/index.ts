@@ -5,7 +5,7 @@ import { connectDb } from './config/database.js';
 const PORT = 8000;
 const CODESPACE_NAME = process.env.CODESPACE_NAME;
 const API_BASE_URL = CODESPACE_NAME
-  ? `https://${CODESPACE_NAME}-8000.githubpreview.dev/api`
+  ? `https://${CODESPACE_NAME}-8000.app.github.dev/api`
   : `http://localhost:${PORT}/api`;
 
 const app = express();
