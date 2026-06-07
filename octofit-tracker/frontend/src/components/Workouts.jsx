@@ -6,10 +6,9 @@ function Workouts() {
 
   useEffect(() => {
     const codespaceName = import.meta.env.VITE_CODESPACE_NAME;
-    const baseUrl = codespaceName
-      ? `https://${codespaceName}-8000.app.github.dev/api`
-      : 'http://localhost:8000/api';
-    const endpoint = `${baseUrl}/workouts`;
+    const endpoint = codespaceName
+      ? `https://${codespaceName}-8000.app.github.dev/api/workouts`
+      : 'http://localhost:8000/api/workouts';
 
     fetch(endpoint)
       .then((response) => response.json())

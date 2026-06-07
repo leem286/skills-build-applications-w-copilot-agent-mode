@@ -6,10 +6,9 @@ function Leaderboard() {
 
   useEffect(() => {
     const codespaceName = import.meta.env.VITE_CODESPACE_NAME;
-    const baseUrl = codespaceName
-      ? `https://${codespaceName}-8000.app.github.dev/api`
-      : 'http://localhost:8000/api';
-    const endpoint = `${baseUrl}/leaderboard`;
+    const endpoint = codespaceName
+      ? `https://${codespaceName}-8000.app.github.dev/api/leaderboard`
+      : 'http://localhost:8000/api/leaderboard';
 
     fetch(endpoint)
       .then((response) => response.json())
