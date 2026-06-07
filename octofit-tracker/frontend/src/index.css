@@ -13,3 +13,38 @@ body {
   border-radius: 1rem;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
+
+header p.api-note,
+header p.env-note {
+  margin: 0.25rem 0;
+  color: #334155;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0f172a;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+}
+
+nav a.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+.error {
+  color: #b91c1c;
+}
